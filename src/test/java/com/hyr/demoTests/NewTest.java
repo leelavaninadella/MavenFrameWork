@@ -22,5 +22,9 @@ public class NewTest {
 	@Test
 	public void test4() {
 		System.out.println("Test4 Method....");
+		System.out.println("Test4 Method....");
+		System.out.println("Test4 Method....");
+		System.out.println("Test4 Method....");
+		System.out.println("Test4 Method....");
 	}
 }
