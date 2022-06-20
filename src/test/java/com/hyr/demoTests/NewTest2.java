@@ -12,6 +12,9 @@ public class NewTest2 {
 	@Test(enabled = false)
 	public void test5() {
 		System.out.println("Test5 Method....");
+		System.out.println("Test6 Method....");
+		System.out.println("Test6 Method....");
+		System.out.println("Test6 Method....");
 	}
 
 	@Ignore
