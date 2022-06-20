@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Suite">
+<parameter name="BrowserName" value="edge"></parameter>
+<parameter name="URL" value="https://opensource-demo.orangehrmlive.com/"></parameter>
+	<test thread-count="2" name="LoginTest" parallel="tests" >
+		<classes>
+			<class name="com.hyr.test.OrangeHrm1">
+				<methods>
+					<include name="openUrl" />
+					<include name="doLogin" />
+					<!--  --><include name="verifyLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- LoginTest -->
+</suite> <!-- OrangeHRM Suite -->

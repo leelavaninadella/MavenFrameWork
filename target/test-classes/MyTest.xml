@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+
+
+	<test thread-count="5" name="OrangeHRMLogin">
+	<classes>
+			<class name="com.hyr.test.OrangeHRM" />
+			<methods>
+				<include name="launchApp" />
+				<include name="enterLoginDetails" />
+				<include name="verifyLogin" />
+
+			</methods>
+
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="OrangeHRMMyInfo">
+
+		<classes>
+			<class name="com.hyr.test.OrangeHRM" />
+			<methods>
+				<include  name="launchApp" />
+				<include name="enterLoginDetails" />
+				<include name="verifyLogin" />
+				<include name="navigateToMyInfo" />
+				<include name="verifyMyInfo" />
+
+			</methods>
+
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="TestGoogle">
+
+		<classes>
+			<class name="com.hyr.test.FirstTest" />
+			<methods>
+				<include name="testFacebook" />
+				<include name="testGoogle" />
+				
+
+			</methods>
+
+		</classes>
+	</test>
+</suite> 

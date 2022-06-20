@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests"
+	thread-count="2">
+	<test name="Test1">
+		<classes>
+			<class name="com.hyr.parallelTests.BasicTestClass1" />
+			<class name="com.hyr.parallelTests.BasicTestClass2" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test2">
+		<classes>
+			<class name="com.hyr.parallelTests.BasicTestClass3" />
+			<class name="com.hyr.parallelTests.BasicTestClass4" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Parallel Test Suite -->
